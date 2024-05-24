@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms </title>
+</head>
+<body>
+    <h1>Form To apply for Course</h1>
+    <form action="post">
+        <div>
+
+            <label for="Username">Enter Your Username</label>
+            <input type="text" id="Username"  name="Username" placeholder="Enter Your Username">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe To latest Updates</label>
+        </div>
+        <div>
+            <label for="comment">Enter Your Comment</label>
+            <br>
+            <textarea name="comment" id="comment" rows="3" cols="50" placeholder="Write Minimum 20 words"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="mango">Mango</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
