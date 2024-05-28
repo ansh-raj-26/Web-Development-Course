@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child-Selector</title>
+    <!-- Child Selector means any element which is under a some elements example -->
+    <style>
+        div > p {
+            color: blueviolet;
+            background-color: rgb(0, 204, 255);
+        }
+        span{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hi i am a Div
+        <p>I am a child of div</p>
+
+    </div>
+    <!-- But if a <p> is not the direct child of a div then we have to use Descendant Selectore-->
+<code>
+  <pre>
+    for example:
+    &ltdiv>
+
+        Hi i am a Div
+
+        &ltarticle>
+    
+           &ltp>I am a child of Div &lt/p&gt
+    
+        &lt/article>
+        <span>so here para is in an articale tag so we cant apply child slector</span> 
+    &lt/div>
+  </pre>
+</code>
+</body>
+</html>

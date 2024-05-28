@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Selector</title>
+    <style>
+        a:visited{
+            color: violet;
+        }
+        a:link{
+            color: rgb(0, 0, 0);
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        p:first-child{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main class="0ne">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.stackoverflow.com">Go to stackoverflow</a>
+    <div class="two">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </div>
+</body>
+</html>
