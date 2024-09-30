@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- CASCADE</title>
+    <style>
+        /* The specificity of this is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this is 10 */
+        .yellow{
+            color: blueviolet;
+        }
+        /* The specificity of this is 10*/
+         .cred{
+            color: red;
+         }
+         /* The specificity of this is 10*/
+         .cpurple{
+            color: black;
+            color: midnightblue !important;
+         }
+/* This is an example of attribute selector */ /* The specificity of this is 10*/
+         [data-x=a]{
+            background-color: rgb(249, 0, 141);
+         }
+         
+         /* Jo bhi element sabse last me hoga css usiko apply karega */
+         /* Position and order of appearance: the order in which your CSS rules appear
+         Specificity: an algorithm that determines which CSS selector has the strongest match
+         Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+         Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+         Lets look into all these one by one */
+    </style>
+</head>
+<body>
+    <h1 style="color: gray;" class="yellow cred cpurple" data-x="a">CSS - CASCADE & Specificity</h1>
+    <p>, the order of specificity is:
+        Important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+
+    <ul>
+        <p>To calculate specificity, assign a value to each part of the selector:</p>
+
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+            <li>Importance: 10000</li>
+    </ul>
+</body>
+</html>

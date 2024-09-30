@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What will the specificity for Complex CSS </title>
+    <style>
+        /* specificity of thi will be 1+10=11 */
+        h1.red{
+            color: blueviolet;
+        }
+        /* The specificity of this is 10*/
+        .yellow{
+            color: aqua;
+        }
+        /* The specificity of this is 10*/
+        .blue{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red yellow blue">Cascade</h1>
+</body>
+</html>
