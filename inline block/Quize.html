@@ -4,24 +4,44 @@ without using br tag write a vertically aligned form asking for name city and pi
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form For name,City,pincode</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
 </head>
+
 <body>
-    <h1>Form for city name pincode</h1>
+    <h2>Personal Details</h2>
+
     <div>
-        <label for="Username">Enter your name here</label>
-        <input type="text" required name="Username" id="Username" placeholder="Minimum 5 Charecters">
+        <label for="username">Name</label>
+        <input type="text" name="username" required id="username" />
+    </div>
+
+    <div>
+        <label for="city">Enter City Name</label>
+        <input type="text" name="city" id="city" >
+    </div>
+
+    <div>
+        <label for="pincode">City Pincode</label>
+        <input type="text" name="pincode" id="pincode" required>
     </div>
     <div>
-        <label for="city">City Name</label>
-        <input type="text" required name="city" id="city"> 
+        <input type="radio"  id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
     </div>
+
     <div>
-        <label for="pincode">Enter Your Pincode</label>
-        <input type="text" name="pincode" id="pincode" placeholder="Write only Numbers">
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+        </select>
     </div>
 </body>
+
 </html>
