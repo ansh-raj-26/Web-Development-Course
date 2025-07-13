@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        
+
+        @media only screen and (max-width: 455px) {
+            /* this is media query used for adjust screen to screen size  */
+            /* To adjust the ratio of a website on every device  */
+            /* dusre screen size par website kaisi dikhni chahiye wo adjust karna hota h iske help se */
+
+            body {
+                background-color: lightcoral;
+            }
+
+            .boxes{
+                flex-direction: column;
+                /* media qurey ke karan jab screen ka size hamare entered size se chota hoga then humare boxes column me hojayenge  */
+                /* We can do other things too with media query to make responsive website for every length of screen accordingley */
+            }
+
+
+
+        }
+
+        /* @media not|only mediatype and (expression){
+            CSS Code;
+        } */
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: lightskyblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>I am Boy</div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root {
+            /* root ke andar jo bhi hoga wo ek global variable ho jayega  */
+            /*this mainly help in deciding the theme of your website  */
+            /* if i change the color here it will change all the color of the website where i have used "var" function */
+            --color: blue;
+            /*  color means primary color of the website also written as "--primary-color"*/
+            --seccolor: rgba(130, 130, 239, 0.542);
+            /* secondary color of the website also written as "--secondary-color" */
+            --defpad:23px;
+            /* default padding of the website also written as "--default-padding" */
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            /* background-color: aquamarine; */
+            background-color: var(--color);
+            /* If i change my color in roots then it will be applied here automatically i dont need to change here  */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+        }
+
+        ul li:first-child {
+            background-color: var(--color);
+            --color: red;
+            /* color variable change isilye hua kyuki ye local variable hogaya and it will overwrite the global variable toh yaha pe jobhi color honge wahi dikhega  */
+            /* this will change the color of the first li element only */
+        }
+
+        .container {
+            /* background-color: rgba(127, 255, 212, 0.418); */
+            background-color: var(--seccolor)
+                /* If i change my seccolor in roots then it will be applied here automatically i dont need to change here  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quidem at commodi autem magnam necessitatibus,
+            esse debitis ipsum ipsa et nihil aspernatur, dolore nobis consectetur hic error sapiente possimus culpa quos
+            atque inventore! A sapiente commodi eum voluptatibus ipsa doloribus dolore neque odio tempora laudantium.
+        </p>
+    </div>
+</body>
+
+</html>
