@@ -1,0 +1,35 @@
+#Countlabel{
+    padding: 20px 15px;
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    font-family: Helvetica;
+
+}
+
+#btnContainer{
+    text-align: center;
+}
+.button{
+    padding: 10px 25px;
+    font-family: Helvetica;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 15px;
+    border-color: aquamarine;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.button:hover{
+    background-color: rgb(12, 226, 211);
+}
+#Incbtn{
+    font-size: 1em;
+}
+#Decbtn{
+    font-size: 1em;
+
+}
+#Resetbtn{
+    font-size: 1em;
+}
