@@ -1,0 +1,23 @@
+
+body{
+    padding: 20px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+#Mybtn{
+    cursor: pointer;
+    font-size: 3em;
+    color: azure;
+    background-color: aqua;
+    border-radius: 10px;
+    border-color: aqua;
+    
+}
+
+.label{
+
+    font-size: 5em;
+} 
+
