@@ -20,3 +20,4 @@ Resetbtn.onclick=function(){
     Countlabel.textContent=count;//onclick it wil reset to the value again to zero
 }
 
+//How to make a timer/stopwatch/alarm?
