@@ -1,0 +1,12 @@
+body{
+    padding: 5px;
+    margin: 1em;
+}
+#submitbtn{
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+    border-radius: 7px;
+    cursor: pointer;
+ }
